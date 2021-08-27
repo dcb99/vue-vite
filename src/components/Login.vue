@@ -24,9 +24,7 @@
           />
         </v-container>
 
-        <v-card-text>
-          
-          
+        <v-card-text>          
           <v-text-field
             id="login-textbox"
             v-model="input.userId"
