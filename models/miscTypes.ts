@@ -1,4 +1,4 @@
-
+import { MultipleMarkdown } from "./MarkDown";
 
 export enum SnackbarColors {
     info = "info",
@@ -219,4 +219,16 @@ export interface GetLookupTableInput extends LookupTableInput {
     lookupTableUrl?: string;
     formId?: string;
     ignoreDefaultFiltering?: boolean;
+}
+
+export interface LoginPageData {
+    loginPlaceHolderText: string;
+    loginType: string;
+    textAboveInput: MultipleMarkdown;
+    textBelowInput: MultipleMarkdown;
+    icon: string;
+    userIsLoggedIn: boolean;
+    toastColor: string;
+    toastMessage: string;
+    isRegistrationDisabled: boolean;
 }
